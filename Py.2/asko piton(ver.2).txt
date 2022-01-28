@@ -175,6 +175,10 @@ minimal_reqem=min(list2)
 minimal_index=list2.index(minimal_reqem)
 print(list[minimal_index])
 
+VERSION 2:
+cumle = input()
+print(min(cumle.split(), key=len))
+
 21)cumle=input()
 list=cumle.split()
 list2=[]
@@ -185,6 +189,10 @@ for i in list:
 maksimal_reqem=max(list2)
 maksimal_index=list2.index(maksimal_reqem)
 print(list[maksimal_index])
+
+VERSION 2:
+cumle = input()
+print(max(cumle.split(), key=len))
 
 22)cumle = input('Cumleni daxil edin:')
 sozler = cumle.split(' ')
