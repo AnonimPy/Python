@@ -274,6 +274,20 @@ reqemler.sort
 reqemler = ''.join(map(str, reqemler))
 print(reqemler)
 
+VERSION 2
+def sira(reqem):
+    ededler = []
+    siraile = []
+    x = 'Sira ile duzulub'
+    for i in reqem:
+        ededler.append(int(i))
+        siraile.append(int(i))
+    siraile = sorted(siraile)
+    if ededler == siraile:
+       return x
+
+eded = input()
+print(sira(eded))
 33)eded=input()
 for i in eded:
     a=int(i)
