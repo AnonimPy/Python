@@ -275,16 +275,21 @@ reqemler = ''.join(map(str, reqemler))
 print(reqemler)
 
 33)eded=input()
+l=[]
 for i in eded:
     a=int(i)
     b=int(eded)
     if b%a == 0:
-        continue
+        l.append('true')
     else:
-        break
-        print("Bolunmur")
-        eded=-1
-if eded != -1:
+       l.append("False")
+a=0
+for i in l:
+    if i == "False":
+       a=a+1
+if a>0:
+    print("Bolunmur")
+else:
     print("Bolunur")
 
 34)eded = input()
