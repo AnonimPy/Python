@@ -109,13 +109,17 @@ print(str(minqiymetayi)+" ayda mali alib "+str(maxqiymetayi)+" ayda satmaq lazim
 11)for i in range(1,6):
     print((i*str(i)).center(5))
 
-12)a = 0
-b = 1
-for i in range(100):
-    a,b = b,a + b
-    if a > 100:
-        break
-    print(a,end = '')
+12)a=1
+b=2
+c=3
+list=[]
+while c<100:
+    a=b
+    b=c
+    c=c+a
+    if c<100:
+      list.append(c)
+print(list)
 13)ededler = input().split(',')
 cem = 0
 for i in ededler:
