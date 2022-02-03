@@ -368,16 +368,19 @@ else:
             return list[a]
 print(dayaqNoqtesi([9,1,9]))
 
-37)def Fibonacci(n):
-    a = 0
-    b = 1
-    for i in range(n):
-        a,b = b,a + b
-        if a>n:
-           break
-        print(a,end = ',')
-eded = int(input())
-Fibonacci(eded)
+37)def funksiya(n):
+   a=1
+   b=2
+   c=3
+   
+   list=[]
+   while c<n:
+       a=b
+       b=c
+       c=c+a
+       if c<n:
+         list.append(c)
+   return list
 
 38)cumle = input()
 herfler = ['o', 'e', 's']
