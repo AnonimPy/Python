@@ -233,21 +233,15 @@ for i in range(0,len(setr)): # setrin terkibini indexleme ile gezirik
         boyukherfindexleri.append(i)
 print(boyukherfindexleri)
 
-28)netice=[]
-for i in soz:
-    a=soz.count(i)
-    if a>1:
-        netice.append('False')
-    else:
-        netice.append('True')
-a=0
-for x in netice:
-    if x =='False':
-          a=a+1
-if a>0:
-    print("False")
-else:
-    print("TRUE")
+28)setr = input("Setri daxil edin: ") 
+def isogram(setr):
+    evvelkiherfler = [] # bura setrdeki gezdiyimiz her herfi elave edeciyik
+    for c in setr:
+        if c in evvelkiherfler:
+            return False
+        evvelkiherfler.append(c)
+    return True
+print(isogram(setr))
 
 29)setr = input('Setri daxil edin:')
 boyukherf = 0
@@ -257,11 +251,7 @@ for i in setr:
         boyukherf = boyukherf + 1
     if i.islower():
         kicikherf = kicikherf + 1
-if boyukherf>kicikherf:
-    setr=setr.upper()
-else:
-    setr=setr.lower()
-print(setr)
+print(boyukherf)
 
 30)b=int(input())
 yuzluk=b//100
@@ -270,8 +260,6 @@ teklik=(b%100)%10
 
 if (yuzluk  *  3) + (onluq  * 3) + (teklik  ** 3) == b:
     print('Orik petuxdu və ədəd Armstrongdu')
-else:
-    print("Peyser orik .no armstrong")
 
 31)herf = input('Eded:')
 if herf == herf[::-1]:
@@ -348,23 +336,15 @@ print(list)
 
 35)eded=input()
 list=[]
-list2=[]
 for i in eded:
     list.append(i)
 for i in list:
     if list.count(i)!= 1:
-        list2.append("KUL TEPEVE")
+        print("KUL TEPEVE")
+        break
     else:
-        list2.append("FERQLIDIR")
-a=0
-for i in list2:
-    if i == "FERQLIDIR":
-        a=a+1
-if a>0:
-    print("FERQLIDIR")
-else:
-    print("KUL TEPEVE")
-
+        print ("FERQLIDIR")
+        break
 
 36)def dayaqNoqtesi(list):
     for a in range(1,len(list)): 
