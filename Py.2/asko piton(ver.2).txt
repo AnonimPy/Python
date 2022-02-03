@@ -265,9 +265,9 @@ onluq=(b%100)//10
 teklik=(b%100)%10
 
 if (yuzluk  *  3) + (onluq  * 3) + (teklik  ** 3) == b:
-    print('ədəd Armstrongdu')
+    print('Orik petuxdu və ədəd Armstrongdu')
 else:
-    print("Armstrong deyil")
+    print("Peyser orik .no armstrong")
 
 31)herf = input('Eded:')
 if herf == herf[::-1]:
@@ -349,7 +349,7 @@ for i in eded:
     list.append(i)
 for i in list:
     if list.count(i)!= 1:
-        list2.append("EYNIDIR")
+        list2.append("KUL TEPEVE")
     else:
         list2.append("FERQLIDIR")
 a=0
