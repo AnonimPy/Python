@@ -274,20 +274,6 @@ reqemler.sort
 reqemler = ''.join(map(str, reqemler))
 print(reqemler)
 
-VERSION 2
-def sira(reqem):
-    ededler = []
-    siraile = []
-    x = 'Sira ile duzulub'
-    for i in reqem:
-        ededler.append(int(i))
-        siraile.append(int(i))
-    siraile = sorted(siraile)
-    if ededler == siraile:
-       return x
-
-eded = input()
-print(sira(eded))
 33)eded=input()
 l=[]
 for i in eded:
@@ -305,26 +291,6 @@ if a>0:
     print("Bolunmur")
 else:
     print("Bolunur")
-
-VERSION 2.UZUN
-eded = input()
-reqemleri = []
-netice = []
-for i in eded:
-    reqemleri.append(int(i))
-for x in reqemleri:
-    if int(eded) % x == 0:
-        netice.append('Bolunur')
-    if int(eded) % x != 0:
-        netice.append('Bolunmur')
-for z in netice:
-    if z.count('Bolunmur') == 1:
-        print('Bu ədədin öz rəqəmləri hamısına bölünmür')
-        break
-    else:
-        print('Bolunur')
-        break
-
 
 34)eded = input()
 ededler = [0,2,4,6,8]
